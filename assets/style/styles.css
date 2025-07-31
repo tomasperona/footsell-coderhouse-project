@@ -8,10 +8,6 @@
     font-family: "Montserrat", sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     background-color: lch(100% 0.01 296.81);
     color: #333;
@@ -115,6 +111,103 @@ img {
     transition: all 0.3s ease;
 }
 
+.nosotros_container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.beckham_img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: #ff0000 0px 0px 10px;
+}
+
+.beckham_parrafo {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 20px;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+.beckham_button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.beckham_button_link {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-form {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin-top: 60px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: red;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+button[type="submit"]:hover {
+    background-color: darkred;
+    transition: background-color 0.3s ease;
+}
+
+.ubicacion_container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+
 footer{
     background: linear-gradient(to top, red 10%, white 90%);
 }
@@ -202,5 +295,97 @@ footer{
     .footer_nav ul {
         flex-direction: column;
         align-items: center;
+    }
+    .nosotros_container {
+        margin-top: 50px;
+    }
+    .beckham_img {
+        max-width: 100%;
+    }
+    .beckham_parrafo {
+        font-size: 1em;
+        max-width: 90%;
+    }
+    .beckham_button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+    .contact-form {
+        width: 95%;
+        padding: 15px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 0.9em;
+    }
+    button[type="submit"] {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+    .gallery_container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-auto-rows: 250px;
+    }
+    .gallery_container img {
+        height: 100%;
+        box-shadow: #ff0000 0px 0px 5px;
+    }
+    .carousel-inner img {
+        height: 300px;
+    }
+    .main-section-title {
+        font-size: 2em;
+    }
+    .main-section-description {
+        font-size: 1.2em;
+        max-width: 90%;
+    }
+    .header-titulo {
+        font-size: 2.5em;
+    }
+    .header-nav-item a {
+        font-size: 1em;
+        padding: 0.5rem 0.8rem;
+    }
+    .header_container {
+        padding: 20px;
+    }
+    .footer_container {
+        padding: 40px 20px;
+    }
+    .footer_nav ul li a {
+        font-size: 1em;
+        margin: 10px;
+    }
+    .footer_bottom p {
+        font-size: 1em;
+    }
+    .beckham_button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+    .beckham_button_link {
+        font-size: 1em;
+    }
+    .beckham_parrafo {
+        font-size: 1em;
+        max-width: 90%;
+    }
+    .beckham_img {
+        max-width: 100%;
+        height: auto;
+    }
+    .nosotros_container {
+        padding: 20px;
+    }
+    .contact-form {
+        width: 95%;
+        padding: 15px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 0.9em;
     }
 }
