@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -69,7 +68,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin-top: 1em;
-    text-shadow: #f36b6b 1px 1px 2px;
+    text-align: center;
 }
 
 
@@ -136,20 +135,15 @@ img {
     max-width: 800px;
 }
 
-.beckham_button {
+.beckham_button_link {
+    display: inline-block;
     background-color: red;
     color: white;
     padding: 10px 20px;
-    border: none;
     border-radius: 5px;
-    cursor: pointer;
+    text-decoration: none;
     font-size: 1.2em;
     margin-top: 20px;
-}
-
-.beckham_button_link {
-    color: white;
-    text-decoration: none;
 }
 
 .contact-form {
@@ -283,6 +277,7 @@ footer{
     .header_container {
         flex-direction: column;
         align-items: center;
+        padding: 20px;
     }
     .header-nav-list {
         flex-direction: column;
@@ -299,26 +294,7 @@ footer{
     .nosotros_container {
         margin-top: 50px;
     }
-    .beckham_img {
-        max-width: 100%;
-    }
-    .beckham_parrafo {
-        font-size: 1em;
-        max-width: 90%;
-    }
-    .beckham_button {
-        font-size: 1em;
-        padding: 8px 16px;
-    }
-    .contact-form {
-        width: 95%;
-        padding: 15px;
-    }
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        font-size: 0.9em;
-    }
+
     button[type="submit"] {
         font-size: 1em;
         padding: 8px 16px;
@@ -348,9 +324,7 @@ footer{
         font-size: 1em;
         padding: 0.5rem 0.8rem;
     }
-    .header_container {
-        padding: 20px;
-    }
+
     .footer_container {
         padding: 40px 20px;
     }

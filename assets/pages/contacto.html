@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +9,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
     <header class="header_container">
         <h1 class="header-titulo">Footsell</h1>
         <nav class="header-nav">
             <ul class="header-nav-list">
-                <li class="header-nav-item"><a href="/index.html" class="header-nav-link">Inicio</a></li>
+                <li class="header-nav-item"><a href="../../index.html" class="header-nav-link">Inicio</a></li>
                 <li class="header-nav-item"><a href="galeria.html" class="header-nav-link">Galeria</a></li>
                 <li class="header-nav-item"><a href="nosotros.html" class="header-nav-link">Sobre Nosotros</a></li>
                 <li class="header-nav-item"><a href="contacto.html" class="header-nav-link">Contacto</a></li>
@@ -21,8 +22,9 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <form class="contact-form" action="">
+        <form aria-label="Formulario contacto" class="contact-form" action="">
             <div class="form-group">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
@@ -38,16 +40,17 @@
             <button type="submit">Enviar</button>
         </form>
     </main>
-    <footer class="footer_container">
+
+    <footer class="footer_container"> <!--En los footer usé una libreria de "cdjns" para los iconos de las redes sociales. -->
         <div class="social_icons">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/Beckham/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/davidbeckham"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/davidbeckham/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/watch?v=eF5JkQRA-KQ"><i class="fa-brands fa-youtube"></i></a>
         </div>
         <div class="footer_nav">
             <ul>
-                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="../../index.html">Inicio</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -58,6 +61,7 @@
             <p>Copyright © 2025 Footsell. Todos los derechos reservados.</p>
         </div>
     </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
