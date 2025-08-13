@@ -1,0 +1,72 @@
+footer {
+  background: linear-gradient(to top, $primary-color 10%, $secondary-color 90%);
+
+  .footer_container {
+    width: 100%;
+    padding: 70px 30px 20px;
+
+    .social_icons {
+      @include flex-center();
+      a {
+        text-decoration: none;
+        padding: 10px;
+        background-color: $secondary-color;
+        margin: 10px;
+        border-radius: 50%;
+
+        i {
+          font-size: 2em;
+          color: black;
+          opacity: 0.9;
+        }
+
+        &:hover {
+          background-color: $primary-color;
+          transition: 0.5s;
+
+          i {
+            color: $secondary-color;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+
+    .footer_nav {
+      margin: 30px 0;
+
+      ul {
+        @include flex-center();
+        list-style: none;
+
+        li {
+          a {
+            color: $secondary-color;
+            margin: 20px;
+            text-decoration: none;
+            font-size: 1.3em;
+            transition: 0.5s;
+            opacity: 0.7;
+
+            &:hover {
+              color: $secondary-color;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    .footer_bottom {
+      padding: 10px;
+      text-align: center;
+
+      p {
+        color: $secondary-color;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        padding: 10px;
+      }
+    }
+  }
+}

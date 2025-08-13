@@ -214,40 +214,43 @@ footer .footer_container .footer_bottom p {
 
 .nosotros_container {
   width: 100%;
-  max-width: 700px;
-  margin: 60px auto 0 auto;
-  padding: 40px 20px;
+  padding: 60px 0;
   background: #fafafa;
-  border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+.nosotros_container .nosotros_content {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
-.nosotros_container h2 {
-  font-size: 2.2em;
-  color: red;
-  margin-bottom: 0.5em;
-}
-.nosotros_container .beckham_img {
-  width: 220px;
-  max-width: 80vw;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.5em;
+.nosotros_container .nosotros_img {
+  width: 320px;
+  max-width: 90vw;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   object-fit: cover;
 }
-.nosotros_container .beckham_parrafo {
+.nosotros_container .nosotros_texto {
+  max-width: 500px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.nosotros_container .nosotros_titulo {
+  font-size: 2.2em;
+  color: red;
+  margin-bottom: 0.2em;
+}
+.nosotros_container .nosotros_parrafo {
   font-size: 1.15em;
   color: #333;
   line-height: 1.6;
-  margin-bottom: 1.5em;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
 }
-.nosotros_container .beckham_button_link {
+.nosotros_container .nosotros_boton {
   background-color: red;
   color: white;
   padding: 10px 20px;
@@ -256,28 +259,22 @@ footer .footer_container .footer_bottom p {
   font-size: 1.2em;
   border: none;
   cursor: pointer;
-  font-size: 1.1em;
-  margin-top: 0.5em;
+  align-self: flex-start;
+  margin-top: 10px;
 }
 
-@media (max-width: 600px) {
-  .nosotros_container {
-    padding: 20px 5vw;
+@media (max-width: 900px) {
+  .nosotros_container .nosotros_content {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
   }
-  .nosotros_container h2 {
-    font-size: 1.5em;
+  .nosotros_container .nosotros_texto {
+    align-items: center;
+    text-align: center;
   }
-  .nosotros_container .beckham_img {
-    width: 90vw;
-    max-width: 95vw;
-  }
-  .nosotros_container .beckham_parrafo {
-    font-size: 1em;
-    max-width: 95vw;
-  }
-  .nosotros_container .beckham_button_link {
-    font-size: 1em;
-    padding: 10px 16px;
+  .nosotros_container .nosotros_boton {
+    align-self: center;
   }
 }
 .ubicacion_container {
