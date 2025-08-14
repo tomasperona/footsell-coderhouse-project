@@ -3,7 +3,6 @@
     overflow-x: hidden;
   }
 
-  /* HEADER Y NAVBAR */
   header.header_container {
     flex-direction: column;
     align-items: center;
@@ -47,7 +46,6 @@
     display: block;
   }
 
-  /* MAIN */
   .main-section-title,
   .main-section-description {
     font-size: 1.2em;
@@ -123,7 +121,6 @@
     padding: 10px;
   }
 
-  /* FOOTER */
   footer .footer_container {
     flex-direction: column;
     align-items: center;
@@ -134,7 +131,7 @@
 
   footer .footer_container .social_icons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 0.5rem;
     width: 100%;

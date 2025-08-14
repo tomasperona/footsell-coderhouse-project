@@ -24,3 +24,50 @@ img {
   object-fit: cover;
   width: 100%;
 }
+
+.article_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  background: linear-gradient(to bottom, $secondary-color 80%, $primary-color);
+  width: 420px;
+  height: 800px;
+  margin: 10px;
+  border-radius: 15px;
+  margin-top: 35px;
+}
+
+.card_image {
+  height: 280px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.persona_1 {
+  background-image: url('https://instagram.faep14-2.fna.fbcdn.net/v/t39.30808-6/508219427_1300357594782056_2550325768822946608_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQuaW1hZ2VfdXJsZ2VuLjEzNjV4MTcwNi5zZHIuZjMwODA4LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=instagram.faep14-2.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QEYgUPJXkK4Qjrhni9wGuBTUOYcGAIl8x0Q5YysfcnuFUjHNOERuSYmMSjZrMGWHX4&_nc_ohc=qx0jwE8HzXkQ7kNvwHhvGwo&_nc_gid=16pbqC-yj8Yxh_JvPtjJWA&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzY1NzI1NTA5NTQxNjYwMzU0NQ%3D%3D.3-ccb7-5&oh=00_AfWth365Ko2KAtUbtKEj8Cah8M64Q0jS0K1_NmWn5WmMpQ&oe=68A2F1B7&_nc_sid=10d13b');
+}
+.persona_2 {
+  background-image: url('https://assets.goal.com/images/v3/bltaaa483e47da093c4/GettyImages-1450106798.jpg?auto=webp&format=pjpg&width=3840&quality=60');
+}
+.persona_3 {
+  background-image: url('https://mediospublicos.uy/wp-content/uploads/2025/02/8022219201001w-1005x670.jpg');
+}
+
+.card h2 {
+  padding: 10px;
+
+}
+
+.card p {
+  padding: 10px;
+
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: $transition;
+}
+
